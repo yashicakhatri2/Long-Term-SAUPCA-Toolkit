@@ -106,9 +106,9 @@ ICState.obj1.Eq = Eq1; ICState.obj1.Cart = State1; ICState.obj1.Del = Del1;
 
 % Chose Test Types + Propagation Time
 constants.case_flag = 1;
-constants.points = 1E4;
-constants.JMAX = [101];
-constants.par = 1; constants.nodes = 4; 
+constants.points = 1E2;
+constants.JMAX = [15];
+constants.par = 0; constants.nodes = 4; 
 constants.Both_GMM = 1;
 constants.STTOrder = 2;
 constants.StateDim = 6;

@@ -1,4 +1,39 @@
 function Pc = GMM_Pc_Cacls_Fun(so, sf, Pinertiali, R_star)
+% GMM_Pc_Calcs_Fun
+%
+% ================================================================
+% INPUTS = 
+% so: Difference in object states at nominal Time of Closest Approach in encounter plane
+% sf: Difference in object states at actual Time of Closest Approach in encounter plane
+% Pinertiali: Combined covariance
+% R_star: Combined hard body radius
+%
+% VARIABLE =
+% C: Rotation matrix to encounter plane
+% xyzhat: Direction C rotates from
+% bhat: Direction C rotates to
+% Xnewi: Relative objects state in the encounter place
+% Pnewi: Relative objects covariance in the encounter place
+% P_star: Covariane in position only
+% ginv: Inverted covariance in position only
+% a: Component (1,1) of ginv
+% b: Component (1,2) of ginv
+% c: Component (2,1) of ginv
+% d: Component (2,2) of ginv
+% R: Combined hard body radius
+% mu: Xnewi components 1 and 3
+% n: Upper limit of integration
+% m: Lower limit of integration
+% n2: Upper limit of integration #2
+% m2: Lower limit of integration #2
+% f2: Non-integral part of probability of collision
+% int1: Part of probability of collision to be integrated
+% out2: Integrated probability of collision
+%
+% OUTPUT = 
+% Pc: Probability of collision output
+% ================================================================
+
     C = NaN(3,3);
     xyzhat = [1 0 0; 0 1 0; 0 0 1];
     bhat(1,:) = sf(1:3) / norm(sf(1:3));

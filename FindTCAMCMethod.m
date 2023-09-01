@@ -12,8 +12,8 @@ if constants.testFig2 == 1
     Del1 = Del1mean' + getOffset(Del1mean,t*3600,constants,1);
     Del2 = Del2mean' + getOffset(Del2mean,t*3600,constants,1);
 
-    OUT1 = COE_to_Cartesian_2(COE_to_Delaunay(Del1,mu,0),mu,1);
-    OUT2 = COE_to_Cartesian_2(COE_to_Delaunay(Del2,mu,0),mu,1);
+    OUT1 = COE_to_Cartesian(COE_to_Delaunay(Del1,mu,0),mu,1);
+    OUT2 = COE_to_Cartesian(COE_to_Delaunay(Del2,mu,0),mu,1);
 else
     propTime2 = P_nom - constants.timeWindow;
     EventFun = @(t,S) CatchTCA(t,S,constants);

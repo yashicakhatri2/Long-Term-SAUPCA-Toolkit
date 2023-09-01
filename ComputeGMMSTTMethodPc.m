@@ -163,7 +163,7 @@ for q = 1:length(constants.JMAX)
     end
    
     PC_GMMi(q) = PC_GMM; % Places total Pc according to the GMM # comps vector
-    toc
+
 end
 
 end
