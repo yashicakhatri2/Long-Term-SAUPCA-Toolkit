@@ -47,8 +47,8 @@ rng('shuffle'); % Shuffle range for random point generation
 
 %% Initial Setup
 % Run Flags
-runMonteCarlo = 1; % Run New MC Pc calcs? 
-runGMMSTTMethod = 1;  % Run New GMMSTT Method Pc calcs?
+runMonteCarlo = 0; % Run New MC Pc calcs? 
+runGMMSTTMethod = 0;  % Run New GMMSTT Method Pc calcs?
 plotThings = 1; % Plot results using new or presaved results
 saveResultsToText = 0; % Save results to a text file
 
