@@ -1,7 +1,7 @@
 % Created and uploaded by: Yashica Khatri August 2023
 %
 % =======================================================================
-% Short-Term Conjunction Analysis Toolkit using a combination of Gaussian
+% Long-Term Conjunction Analysis Toolkit using a combination of Gaussian
 % Mixture Models (GMM) and State Transition Tensors (STTs). The dynamics
 % used in this work include J2 and SRP dynamics. Hamiltonian averaging is
 % used to achieve the mean dynamics using the chosen perturbation, this is
